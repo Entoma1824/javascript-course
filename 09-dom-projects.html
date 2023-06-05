@@ -2,18 +2,22 @@
 
 <html>
   <head>
-    <title>DOM</title>
+    <title>DOM Projects</title>
   </head>
 
   <body>
+    <p>YouTube Subscribe Button</p>
     <button
       class="subscribtion"
       onclick="
+      /*
       subscribeValue = !subscribeValue
 
       subscribeValue
         ? (document.querySelector('.subscribtion').innerHTML = 'Subscribe')
         : (document.querySelector('.subscribtion').innerHTML = 'Subscribed');
+        */
+        subscribe();
     "
     >
       Subscribe
@@ -25,6 +29,16 @@
       // function valueChecking() {
       // subscriveValue ? 'Subscribe' : 'Subscribed';
       // }
+
+      function subscribe() {
+        const buttonElement = document.querySelector('.subscribtion');
+
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerText = 'Subscribed';
+        } else {
+          buttonElement.innerText = 'Subscribe';
+        }
+      }
     </script>
   </body>
 </html>
