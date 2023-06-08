@@ -3,9 +3,26 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
+
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial;
+        color: white;
+
+      }
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      p {
+      }
+      h1 {
+      }
+    </style>
   </head>
   <body>
-    <p>Rock Paper Scissors</p>
+    <p class="title">Rock Paper Scissors</p>
 
     <button onclick="playGame('rock');">Rock</button>
 
@@ -13,7 +30,7 @@
 
     <button onclick="playGame('scissors');">Scissors</button>
 
-    <p class="js-result"></p>
+    <p class="js-result result"></p>
     <p class="js-moves"></p>
     <p class="js-score"></p>
 
@@ -40,6 +57,7 @@
       };
 
       updateScoreElement();
+
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
@@ -113,8 +131,8 @@
         return computerMove;
       }
     </script>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <a href="index.html">home</a>
   </body>
 </html>
