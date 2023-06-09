@@ -9,22 +9,20 @@
         background-color: black;
         font-family: Arial;
         color: white;
-
       }
       .title {
         font-size: 30px;
         font-weight: bold;
       }
-      p {
-      }
-      h1 {
-      }
+
     </style>
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
 
-    <button onclick="playGame('rock');">Rock</button>
+    <button onclick="playGame('rock');">
+      <img src=" rock.png"/>Rock
+    </button>
 
     <button onclick="playGame('paper');">Paper</button>
 
@@ -57,7 +55,6 @@
       };
 
       updateScoreElement();
-
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
