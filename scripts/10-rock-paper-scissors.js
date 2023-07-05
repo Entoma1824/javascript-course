@@ -51,7 +51,7 @@ function playGame(playerMove) {
     document.querySelector('.js-result').innerHTML = result;
     document.querySelector(
       '.js-moves'
-    ).innerHTML = `You <img src="https://stackblitz.com/files/web-platform-3cxglg/github/Entoma1824/javascript-course/master/img/${playerMove}.png" class="move-icon"/> <strong>VS</strong> <img src="https://stackblitz.com/files/web-platform-3cxglg/github/Entoma1824/javascript-course/master/img/${computerMove}.png" class="move-icon"/> Computer`;
+    ).innerHTML = `You <img src="img/${playerMove}.png" class="move-icon"/> <strong>VS</strong> <img src="img/${computerMove}.png" class="move-icon"/> Computer`;
   }
   updateScoreElement();
 }
